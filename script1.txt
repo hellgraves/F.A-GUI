@@ -865,6 +865,24 @@ game.Players:Chat(hider..AdminPrefix.."respawn ".. player.Name)
 end
 end
 
+elseif msg:sub(1, 12) == AdminPrefix.."fbring" then
+spammer2 = false
+spammer = false
+chaos = false
+losing = false
+bruv = false
+haha = false
+game.Players:Chat(hider..AdminPrefix.."notice me free bring all loaded")
+task.wait(1.25)
+for i, player in pairs(Players:GetPlayers()) do
+if player.Name ~= plrname then
+task.wait(0.5)
+game.Players:Chat(hider..AdminPrefix.."bring ".. player.Name)
+task.wait(0.5)
+game.Players:Chat(hider..AdminPrefix.."unfly ".. player.Name)
+end
+end
+
 elseif msg:sub(1, 9) == AdminPrefix.."lazy" then
 spammer2 = false
 spammer = false
